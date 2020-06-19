@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nava Project</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<section class="main-screen">
+		<header class="content-wrapper">
+			<a href="#" class="logo"><img src="./img/logo.png" alt="nava"></a>
+			<nav class="main-menu">
+				<ul class="menu-list">
+					<li class="menu-item"><a href="#start">Top destinatioins</a></li>
+					<li class="menu-item"><a href="#features">Add your boat</a></li>
+					<li class="menu-item"><a href="#footer">Sign up</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>Reserve a boat now!</h1>
+		<h2>And set your sails into paradise!</h2>
+		<form action="send">
+			<input type="text" id="subscribeInput2" onkeyup='saveValue(this);'
+				placeholder="What is your destination, sailor?" class="search-boat"> <button class="search-butt">Find a
+				boat</button>
+		</form>
+	</section>
+
+	<section class="destinations" id="start">
+		<div class="statistics">
+			<div class="achivments"><span class="achivment-state">2,300</span><span class="achivment-name">
+					Destination</span></div>
+			<div class="achivments"><span class="achivment-state">1,000</span> <span
+					class="achivment-name">Cities</span></div>
+			<div class="achivments"><span class="achivment-state">35,000</span> <span
+					class="achivment-name">boats</span></div>
+			<div class="achivments"><span class="achivment-state">50,000</span> <span class="achivment-name">
+					Sailors</span></div>
+		</div>
+		<h2>Explore our top destinatioins</h2>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </span>
+		<div class="affords">
+			<div class="main-trip">
+				<div class="afford-icon">730</div>
+				<h2>Figueira da Foz</h2><span>Portugal</span>
+			</div>
+			<div class="trips trip1">
+				<div class="afford-icon">621</div>
+				<h2>Ibiza</h2><span>Spain</span>
+			</div>
+			<div class="trips trip2">
+				<div class="afford-icon">543</div>
+				<h2>Palma de Mallorca</h2><span>Spain</span>
+			</div>
+			<div class="trips trip3">
+				<div class="afford-icon">495</div>
+				<h2>Portofino</h2><span>Italy</span>
+			</div>
+			<div class="trips trip4">
+				<div class="afford-icon">402</div>
+				<h2>Port Hercules</h2><span>Monaco</span>
+			</div>
+		</div>
+		<button class="afford-butt">Explore more destinatioins</button>
+
+	</section>
+	<section class="your-boat" id='features'>
+		<h1>Have your own boat?</h1>
+		<h2>Nav gare necesse est, vivere non est necesse</h2>
+		<button>Make money with your boat</button>
+	</section>
+	<section class="featured-boats">
+		<h2>Featured boats</h2>
+		<span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi</span>
+		<div class="boats">
+			<div class="our-boats boat1">
+				<div class="price-icon">€580 / day</div>
+			</div>
+			<div class="our-boats boat2">
+				<div class="price-icon">€950 / day</div>
+			</div>
+			<div class="our-boats boat3">
+				<div class="price-icon">€820 / day</div>
+			</div>
+			<div class="our-boats boat4">
+				<div class="price-icon">€400 / day</div>
+			</div>
+		</div>
+		<button>Load more boats</button>
+	</section>
+
+	<footer id="footer">
+		<div class="page-end">
+			<div class="footer-content">
+				<h3>Top locations</h3>
+				<span>Lorem ipsum dolor Sit amet consectetur Adipisicing elitEiusmod tempor Incididunt ut labore</span>
+			</div>
+			<div class="footer-content">
+				<h3>Featured boates</h3>
+				<span>Lorem ipsum dolor Sit amet consectetur Adipisicing elitEiusmod tempor </span>
+			</div>
+			<div class="footer-content social">
+				<h3>Subscribe to our newsletter</h3>
+				<input id="subscribeInput" onkeyup='saveValue(this);' type="text" placeholder="Your email adress">
+				<button>Subscribe</button>
+				<div class="link facebook"><a href="#"></a></div>
+				<div class="link twitter"><a href="#"></a></div>
+				<div class="link google"><a href="#"></a></div>
+			</div>
+
+			<div class="footer-content">
+				<h3>Contact us</h3>
+				<span>Lorem ipsum dolor Sit amet consectetur Adipisicing elitEiusmod tempor Incididunt ut labore</span>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		document.getElementById("subscribeInput").value = getSavedValue("subscribeInput");
+		document.getElementById("subscribeInput2").value = getSavedValue("subscribeInput2");
+
+		function saveValue(e) {
+			var id = e.id;
+			var val = e.value;
+			localStorage.setItem(id, val);
+		}
+
+		function getSavedValue(v) {
+			if (!localStorage.getItem(v)) {
+				return "";
+			}
+			return localStorage.getItem(v);
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,494 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.main-screen {
+	width: 100%;
+	height: 100vh;
+	background: url(./img/main-pic.jpg) 0 0 no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.content-wrapper {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+
+header {
+	height: 80px;
+	position: relative;
+	margin-bottom: 200px
+}
+
+.logo {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.logo a {
+	display: block;
+}
+
+.logo img {
+	width: 160px;
+	height: auto;
+}
+
+.main-menu {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.main-menu>.menu-list {
+	list-style: none;
+}
+
+.main-menu>.menu-list>.menu-item {
+	display: inline-block;
+}
+
+.main-menu>.menu-list>.menu-item a:hover {
+	border: 1px solid #f3f5fd;
+}
+
+.main-menu>.menu-list>.menu-item a {
+	line-height: 42px;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 5px 5px 5px 5px;
+	box-sizing: border-box;
+	height: 42px;
+	padding: 0 35px;
+	display: block;
+	color: #f3f5fd;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 72px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0 0 25px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.search-boat {
+	box-sizing: border-box;
+	border: none;
+	padding-left: 30px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 570px;
+	height: 62px;
+	border-radius: 5px 0 0 5px;
+	text-transform: uppercase;
+}
+
+.search-butt {
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: -4px;
+	cursor: pointer;
+	border: none;
+	background-color: #e7434e;
+	height: 62px;
+	width: 200px;
+	text-transform: uppercase;
+}
+
+.search-butt::before {
+	content: url(./img/button-pic.png);
+	margin-right: 10px;
+}
+
+.statistics {
+	display: inline-block;
+	padding-top: 40px;
+	width: 70%;
+	margin-top: -70px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #fff;
+	height: 140px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.statistics>.achivments {
+	height: 80px;
+	margin-right: -4px;
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	border-right: 1px solid #d4d4d4;
+}
+
+.statistics>.achivments:last-child {
+	border: none;
+}
+
+.statistics>.achivments>.achivment-name {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.statistics>.achivments>.achivment-state {
+	margin-bottom: 13px;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.destinations {
+	text-align: center;
+	width: 100%;
+	height: 150vh;
+
+}
+
+.destinations h2 {
+	color: black;
+}
+
+.destinations span {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.destinations .affords {
+	margin-left: 15.3%;
+	margin-top: 30px;
+	display: inline-block;
+	width: 70%;
+	height: 580px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 45px;
+}
+
+.destinations .affords .main-trip {
+	position: relative;
+	box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+	background: url(./img/portugal.jpg) no-repeat;
+	background-size: cover;
+	border-radius: 5px 5px 5px 5px;
+	height: 250px;
+	width: 63%;
+}
+
+.destinations .affords .trips {
+	box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+	position: relative;
+	border-radius: 5px 5px 5px 5px;
+	width: 30%;
+	height: 250px;
+}
+
+.destinations .affords .trip1 {
+	background: url(./img/ibiza.jpg) no-repeat;
+	background-size: cover;
+}
+
+.destinations .affords .trip2 {
+	background: url(./img/spain.jpg) no-repeat;
+	background-size: cover;
+}
+
+.destinations .affords .trip3 {
+	background: url(./img/hercules.jpg) no-repeat;
+	background-size: cover;
+}
+
+.destinations .affords .trip4 {
+	background: url(./img/portofino.jpg) no-repeat;
+	background-size: cover;
+}
+
+.destinations .affords h2 {
+	left: 20px;
+	bottom: 30px;
+	padding: 0 0 10px;
+	margin: 0;
+	color: #fff;
+	position: absolute;
+}
+
+.destinations .affords span {
+	left: 20px;
+	bottom: 15px;
+	color: #fff;
+	font-size: 16px;
+	position: absolute;
+}
+
+.destinations .affords .afford-icon {
+	position: absolute;
+	color: #fff;
+	border-radius: 5px 5px 5px 5px;
+	left: 20px;
+	top: 15px;
+	width: 9%;
+	height: 30px;
+	padding-left: 3%;
+	line-height: 30px;
+	background: url(./img/button-pic.png) no-repeat #e7434e 5px 5px;
+}
+
+.destinations .affords .trips .afford-icon {
+	width: 20%;
+	padding-left: 5%
+}
+
+.destinations .afford-butt {
+	background-color: #fff;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+	border: 1px solid grey;
+	border-radius: 5px 5px 5px 5px;
+	height: 50px;
+	width: 20%;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	outline-style: none;
+
+}
+
+.destinations .afford-butt:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.your-boat {
+	width: 100%;
+	height: 500px;
+	background: url(./img/your-boat.jpg) no-repeat 0 -300px;
+	background-size: cover;
+	text-align: center;
+
+}
+
+.your-boat h1 {
+	margin: 0;
+	padding: 150px 0 20px 0;
+}
+
+.your-boat h2 {
+	margin: 0;
+	padding: 0 0 80px;
+}
+
+.your-boat button {
+	border: none;
+	color: #fff;
+	background-color: #e7434e;
+	border-radius: 5px 5px 5px 5px;
+	height: 50px;
+	width: 20%;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	outline-style: none;
+
+}
+
+.your-boat button:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.featured-boats {
+	text-align: center;
+	width: 100%;
+	height: 150vh;
+}
+
+.featured-boats h2 {
+	color: black;
+	margin-top: 100px;
+}
+
+.featured-boats span {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.featured-boats .boats {
+	margin-left: 15.3%;
+	margin-top: 30px;
+	display: inline-block;
+	width: 70%;
+	height: 580px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 45px;
+}
+
+.featured-boats .boats .our-boats {
+	position: relative;
+	border-radius: 5px 5px 5px 5px;
+	width: 48%;
+	height: 250px;
+}
+
+.featured-boats .boats .boat1 {
+	background: url(./img/delphia-47.jpg) no-repeat 0 0;
+	background-size: cover;
+
+}
+
+.featured-boats .boats .boat2 {
+	background: url(./img/sense-55.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
+.featured-boats .boats .boat3 {
+	background: url(./img/crusier-51.jpg) no-repeat;
+	background-size: cover;
+}
+
+.featured-boats .boats .boat4 {
+	background: url(./img/crusier-41s.jpg) no-repeat;
+	background-size: cover;
+}
+
+.featured-boats .boats .price-icon {
+	position: absolute;
+	color: #fff;
+	border-radius: 5px 5px 5px 5px;
+	left: 20px;
+	top: 15px;
+	width: 17%;
+	height: 30px;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 30px;
+	background-color: #e7434e;
+}
+
+.featured-boats button {
+	border: 1px solid grey;
+	color: black;
+	background-color: #fff;
+	border-radius: 5px 5px 5px 5px;
+	height: 50px;
+	width: 15%;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	outline-style: none;
+}
+
+.featured-boats button:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+	padding: 20px;
+	color: #fff;
+	width: 100%;
+	height: 325px;
+	background: url(./img/footer-icon.png) no-repeat rgb(40, 40, 40);
+}
+
+footer .page-end {
+	margin-left: 10.3%;
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	line-height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+footer .page-end h3 {
+	margin: 0;
+	padding: 0 0 15px;
+	font-size: 16px;
+}
+
+footer .footer-content {
+	margin-top: 50px;
+	margin-left: 5%;
+	text-align: left;
+	width: 15%;
+	display: block;
+
+}
+
+footer .footer-content.social {
+	width: 35.6%;
+}
+
+footer .footer-content.social input {
+	box-sizing: border-box;
+	width: 65%;
+	height: 35px;
+	border-radius: 3px 0 0 3px;
+	border: none;
+	padding-left: 5%;
+	margin-bottom: 30px;
+
+}
+
+footer .footer-content.social button {
+	border-radius: 0 3px 3px 0;
+	border: none;
+	width: 35%;
+	height: 35px;
+	margin-left: -1.3%;
+	color: #fff;
+	background-color: #e7434e;
+}
+
+footer .link {
+	height: 40px;
+	width: 12.3%;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 3%;
+}
+
+footer .link:hover {
+	box-shadow: 0 0 10px rgba(220, 220, 220, 0.5);
+}
+
+footer .link a {
+	display: block;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+footer .link:last-child {
+	margin-right: 0;
+}
+
+footer .link.facebook {
+	background: url(./img/facbook.png) no-repeat #717171 0 -2px;
+	;
+	background-size: cover;
+}
+
+footer .link.twitter {
+	background: url(./img/twitter-3.png) no-repeat #717171 0 0;
+	background-size: cover;
+}
+
+footer .link.google {
+	background: url(./img/facbook.png) no-repeat #717171 0 -2px;
+	background-size: cover;
+}
