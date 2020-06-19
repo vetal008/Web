@@ -1,0 +1,17 @@
+body
+{
+	background-color: #163;
+	text-align: center;
+}
+
+table
+{
+	border-style: dashed;
+	margin: auto;
+}
+
+footer
+{
+	position: absolute;
+	bottom: 0;
+}
