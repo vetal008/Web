@@ -1,0 +1,317 @@
+body {
+    background: pink;
+    height: 100vh;
+    font-size: 25px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 100px 0;
+}
+
+.main {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 50px;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+ul li {
+    font-style: italic;
+    margin: 10px;
+}
+
+header,
+footer {
+    background: gray;
+    text-align: center;
+    padding: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+
+.rotatestatic {
+    margin: 50px 0;
+    transform: rotate(20deg);
+}
+
+.rotateAnimation {
+    margin: 50px 0;
+
+    animation: rotAn 3s ease-out;
+}
+
+.pryamokytnik {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    transition: all 2s;
+}
+
+.pryamokytnik:hover {
+    transform: rotate3d(1, 1, 1, 45deg)
+}
+
+.pryamokytnik4 {
+    width: 200px;
+    height: 200px;
+    background: rgb(255, 0, 212);
+    animation: task4 22s;
+}
+
+.pryamokytnik5 {
+    width: 200px;
+    height: 200px;
+    background: rgb(38, 0, 255);
+    animation: task5 5s ease-in-out;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background: green;
+    border-radius: 50%;
+    transition: all 1.75s ease-in-out;
+}
+
+.circle:hover {
+    background: #FF686B;
+    transform: rotate3d(1, 1, 1, 90deg);
+
+}
+
+@keyframes rotAn {
+    0% {
+        transform: none;
+    }
+
+    95% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes task4 {
+    0% {
+        background: rgb(38, 0, 255);
+    }
+
+    25% {
+        background: rgb(87, 8, 38);
+    }
+
+    50% {
+        background: rgb(75, 11, 128);
+    }
+
+    75% {
+        background: rgb(19, 10, 97);
+    }
+
+    100% {
+        background: rgb(13, 141, 158);
+    }
+
+}
+
+
+
+@keyframes task5 {
+    0% {
+        background: rgb(255, 0, 212);
+        transform: none;
+        width: 200px;
+        height: 200px;
+    }
+
+    25% {
+        background: rgb(87, 8, 38);
+        width: 150px;
+        height: 150px;
+    }
+
+    50% {
+        background: rgb(75, 11, 128);
+        width: 125px;
+        height: 125px;
+    }
+
+    75% {
+        background: rgb(19, 10, 97);
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        background: rgb(13, 141, 158);
+        transform: translateX(1000px);
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+/* flex + grid */
+
+/* flex */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.firstrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.div-1 {
+    background: red;
+    padding: 40px;
+    flex: 10;
+}
+
+
+.div-2 {
+    background: rgb(93, 8, 163);
+    padding: 40px;
+    flex: 7;
+}
+
+.div-3 {
+    background: blue;
+    padding: 40px;
+    flex: 7;
+}
+
+.div-4 {
+    background: black;
+    padding: 40px;
+    flex: 20;
+
+}
+
+
+.div-5 {
+    background: rgb(10, 182, 5);
+    padding: 40px;
+    flex: 10;
+}
+
+.div-6 {
+    background: saddlebrown;
+    padding: 40px;
+    flex: 20;
+
+
+}
+
+.div-7 {
+    background: khaki;
+    padding: 40px;
+    flex: 10;
+}
+
+.div-8 {
+    background: olive;
+    padding: 40px;
+    flex: 10;
+}
+
+.div-9 {
+    background: rgb(31, 185, 185);
+    padding: 40px;
+    flex: 3.5;
+}
+
+.div-10 {
+    background: rgb(141, 20, 56);
+    padding: 40px;
+    flex: 3.5;
+}
+
+.div-11 {
+    background: rgb(221, 166, 14);
+    padding: 40px;
+    flex: 3.5;
+}
+
+.div-12 {
+    background: rgb(7, 6, 0);
+    padding: 40px;
+    flex: 23;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        "div-1 div-1 div-1 div-1 div-1 div-2 div-2 div-2 div-2"
+        "div-3 div-3 div-3 div-3 div-3 div-3 div-3 div-3 div-3"
+        "div-4 div-4 div-4 div-5 div-5 div-5 div-5 div-5 div-5"
+        "div-4 div-4 div-4 div-6 div-6 div-6 div-6 div-6 div-6"
+        "div-7 div-7 div-8 div-8 div-9 div-9 div-9 div-9 div-9""div-7 div-7 div-8 div-8 div-10 div-10 div-10 div-10 div-10";
+}
+
+.grid .div-1 {
+    grid-area: div-1;
+}
+
+.grid .div-2 {
+    grid-area: div-2;
+}
+
+.grid .div-3 {
+    grid-area: div-3;
+}
+
+.grid .div-4 {
+    grid-area: div-4;
+}
+
+.grid .div-5 {
+    grid-area: div-5;
+}
+
+.grid .div-6 {
+    grid-area: div-6;
+}
+
+.grid .div-7 {
+    grid-area: div-7;
+}
+
+.grid .div-8 {
+    grid-area: div-8;
+}
+
+.grid .div-9 {
+    grid-area: div-9;
+}
+
+.grid .div-10 {
+    grid-area: div-10;
+}
