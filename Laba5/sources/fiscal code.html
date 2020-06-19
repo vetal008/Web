@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="1.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="form-style-2">
+                <form action="" method="get">
+                    <label for="name"><span>Name </span><input type="text" class="input-field" id="name" /></label>
+                    <label for="surname"><span>Surname </span><input type="text" class="input-field"
+                            id="surname" /></label>
+                    <label><span>Birthday</span><input type="text" class="birthday-field input-field" id="bday"
+                            maxlength="10" /></label>
+                    <label for="gender"><span>Gender</span><select id="gender" class="select-field">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select></label>
+                    <label><span> </span><input type="button" onclick="makeCode()" class="submit" type="submit"
+                            value="Submit"></label>
+                </form>
+                <div class="columnCode">
+                    <div class="block">
+                        <h4>Your code:</h4>
+                        <span class="output-text" id="fiscal-code">XXXXXX00X00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
